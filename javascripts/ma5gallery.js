@@ -12,10 +12,10 @@ $.fn.ma5preload = function() {
 }
 function ma5showActive() {
     $('.ma5-imgbox').addClass('ma5-previous');
-    $('body').addClass('ma5-in').append('<div class="ma5-imgbox"></div>');
     setTimeout(function() {$('.ma5-imgbox.ma5-previous').remove();$('body').removeClass('ma5-in');}, 1000);
-    var last = $('.ma5-imgbox').last();
-    $('.ma5-active img').clone().attr('src', $('.ma5-active img').attr('src').replace(/\-thumbnail./, '.')).addClass('ma5-clone').appendTo(last);
+    var ma5clone = $('.ma5-active img').clone().attr('src', $('.ma5-active img').attr('src').replace(/\-thumbnail./, '.')).addClass('ma5-clone');
+    $('body').addClass('ma5-in').append('<div class="ma5-imgbox"></div>');
+    $(ma5clone).appendTo($('.ma5-imgbox').last());
 }
 function ma5hideActive() {
     $('.ma5-imgbox').on('touch click', function() {
