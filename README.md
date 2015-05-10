@@ -3,7 +3,9 @@ Simple and ultralight jQuery gallery.
 >v.1.2
 
 1.2 Add preload option
+
 1.1 Add keys control
+
 1.0 Initial
 
 ###Features:
@@ -16,8 +18,11 @@ Simple and ultralight jQuery gallery.
 * [See example](http://galeria.ma5.pl/)
 
 IMAGES 
+
 Thumbnails and full images should place in the same folder:
+
 name-thumbnail.jpg
+
 name.jpg
 
 ### 1.Getting Started
@@ -31,7 +36,7 @@ name.jpg
 
 ### 2. Set up HTML
 
-Single MODE
+SINGLE MODE
 ```html
 <!-- html body -->
 <figure><img src="name-thumbnail.jpg" alt=""></figure>
@@ -56,8 +61,7 @@ GALLERY MODE
 ```
 
 ### 4.Options
-preload : true|false 
-Default false Download all images to the browser.
+preload : true|false (Default false) Download all images to the browser.
 
 License
 ------------
