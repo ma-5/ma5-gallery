@@ -1,9 +1,9 @@
 ### MA5-gallery ###
 Simple and ultralight jQuery gallery.
->v.1.1
+>v.1.2
 
+1.2 Add preload option
 1.1 Add keys control
-
 1.0 Initial
 
 ###Features:
@@ -15,12 +15,9 @@ Simple and ultralight jQuery gallery.
 ### Example
 * [See example](http://galeria.ma5.pl/)
 
-
 IMAGES 
-Thumbnail and full should place in the same folder:
-
+Thumbnails and full images should place in the same folder:
 name-thumbnail.jpg
-
 name.jpg
 
 ### 1.Getting Started
@@ -53,8 +50,14 @@ GALLERY MODE
 ### 3.Call the script
 
 ```html
-ma5gallery('figure img');
+    $('figure img').ma5gallery({
+        preload:true
+    });
 ```
+
+### 4.Options
+preload : true|false 
+Default false Download all images to the browser.
 
 License
 ------------
