@@ -4,7 +4,7 @@
 *   Copyright (c) 2015 Tomasz Kalinowski
 *   http://galeria.ma5.pl
 *   GitHub:https://github.com/ma-5/ma5-gallery
-*/ 
+*/
 @-webkit-keyframes animation-d-m {0% {-webkit-transform:translate3d(0, 100%, 0);} 100% {-webkit-transform:translate3d(0, 0, 0);}}
 @keyframes animation-d-m {0% {transform:translate3d(0, 100%, 0);} 100% {transform:translate3d(0, 0, 0);}}
 @-webkit-keyframes animation-m-u {0% {-webkit-transform:translate3d(0, 0, 0);} 100% {-webkit-transform:translate3d(0, -100%, 0);}}
@@ -15,22 +15,22 @@
 @keyframes animation-d-m2 {0% {transform:translate3d(0, 5.8rem, 0);} 100% {transform:translate3d(0, 0, 0);}}
 .ma5-gallery {font-size:0;}
 .ma5-gallery-active {overflow-y:scroll;}
-.ma5-imgbox {width:100%; height:100%; position:fixed; top:0; left:0; overflow:hidden; background-color:#141414; -webkit-transform:translateX(0) translateY(0); transform:translateX(0) translateY(0); -webkit-transition:background-color 0.5s ease-out; -webkit-animation-timing-function:ease-out; -webkit-animation-duration:0.8s; -webkit-animation-delay:0; -webkit-animation-fill-mode:forwards; -webkit-animation-name:animation-d-m; transition:background-color 0.5s ease-out; animation-timing-function:ease-out; animation-duration:0.8s; animation-delay:0; animation-fill-mode:forwards; animation-name:animation-d-m;}
+.ma5-imgbox {width:100%; height:100%; position:fixed; top:0; left:0; overflow:hidden; background-color:#141414; -webkit-transform:translateX(0) translateY(0); transform:translateX(0) translateY(0); -webkit-transition:background-color 0.5s ease-out; -webkit-animation-timing-function:ease-out; -webkit-animation-duration:0.7s; -webkit-animation-delay:0.1s; -webkit-animation-fill-mode:both; -webkit-animation-name:animation-d-m; transition:background-color 0.5s ease-out; animation-timing-function:ease-out; animation-duration:0.7s; animation-delay:0.1s; animation-fill-mode:both; animation-name:animation-d-m;}
 .ma5-imgbox img {position:absolute; left:-100%; right:-100%; top:-100%; bottom:-100%; margin:auto; width:auto; height:auto; min-width:0; min-height:0; max-width:100%; max-height:100%; border:none; box-shadow:none; image-rendering:optimizeSpeed; image-rendering:-moz-crisp-edges; image-rendering:-o-crisp-edges; image-rendering:-webkit-optimize-contrast; image-rendering:optimize-contrast; -ms-interpolation-mode:nearest-neighbor;}
 .ma5-imgbox.ma5-out {-webkit-animation-name:animation-m-u; animation-name:animation-m-u; -webkit-animation-fill-mode:forwards; animation-fill-mode:forwards;}
-.ma5-gallery-active .ma5-imgbox img {top:calc(-100% - 5.9rem); max-height:calc(100% - 5.9rem);}
+.ma5-gallery-active .ma5-imgbox img {top:-100%; top:calc(-100% - 5.9rem); max-height:100%; max-height:calc(100% - 5.9rem);}
 .ma5-gallery-active .ma5-imgbox.ma5-out {-webkit-animation-delay:0; animation-delay:0;}
 .ma5-imgbox.ma5-previous {background-color:black;}
 .ma5-tmp {display:none;}
 .ma5-tmp.ma5-control {display:block;}
-.ma5-control {position:fixed; bottom:0; left:0; font-size:0; width:100%; padding:0; text-align:center; z-index:1000; -webkit-transform:translateX(0) translateY(0); transform:translateX(0) translateY(0); -webkit-animation-timing-function:ease-out; -webkit-animation-duration:0.3s; -webkit-animation-delay:0; -webkit-animation-fill-mode:none; -webkit-animation-name:animation-d-m2; animation-timing-function:ease-out; animation-duration:0.3s; animation-delay:0; animation-fill-mode:none; animation-name:animation-d-m2;}
+.ma5-control {position:fixed; bottom:0; left:0; font-size:0; width:100%; padding:0; text-align:center; z-index:1000; -webkit-transform:translateX(0) translateY(0); transform:translateX(0) translateY(0); -webkit-animation-timing-function:ease-out; -webkit-animation-duration:0.3s; -webkit-animation-delay:0; -webkit-animation-fill-mode:both; -webkit-animation-name:animation-d-m2; animation-timing-function:ease-out; animation-duration:0.3s; animation-delay:0; animation-fill-mode:both; animation-name:animation-d-m2;}
 .ma5-control figure {width:4.4rem; height:4.4rem; max-width:4.4rem; max-height:4.4rem; position:relative; display:inline-block; overflow:hidden; font-size:0; margin:0; padding:0; border:0.101rem solid rgba(0, 0, 0, 0.3);}
 .ma5-control figure img {display:block; cursor:pointer; width:100%; min-width:100%; min-height:100%; margin:auto; position:absolute; top:-100%; right:-100%; bottom:-100%; left:-100%; opacity:0.65; image-rendering:optimizeSpeed; image-rendering:-moz-crisp-edges; image-rendering:-o-crisp-edges; image-rendering:-webkit-optimize-contrast; image-rendering:optimize-contrast; -ms-interpolation-mode:nearest-neighbor;}
-.ma5-control figure.ma5-active, .ma5-control figure:hover {transform:scale3d(1.1, 1.1, 1); border:0.101rem solid rgba(255, 255, 255, 0.8); z-index:1001;}
+.ma5-control figure.ma5-active, .ma5-control figure:hover {-webkit-transform:scale3d(1.1, 1.1, 1); transform:scale3d(1.1, 1.1, 1); border:0.101rem solid rgba(255, 255, 255, 0.8); z-index:1001;}
 .ma5-control figure.ma5-active img, .ma5-control figure:hover img {opacity:1;}
 .ma5-control figure.ma5-active img {cursor:default;}
 .ma5-control figure:hover {z-index:1002;}
 .ma5-control.ma5-out {-webkit-animation-name:animation-m-d; -webkit-animation-delay:0; -webkit-animation-fill-mode:both; animation-name:animation-m-d; animation-delay:0; animation-fill-mode:both;}
 .ma5-control .ma5-bg {display:block; position:relative; white-space:nowrap; overflow:auto; padding:0.7rem 0.8rem 0.7rem 0.8rem; background-color:rgba(0, 0, 0, 0.8);}
-.ma5-preloadbox {position:absolute; width:1px; height:1px; bottom:0; right:0; overflow:hidden;}
-.ma5-preloadbox img {width:auto !important; height:auto !important; position:absolute; top:0; left:0;}
+.ma5-preloadbox {position:fixed; width:1px; height:1px; bottom:0; right:0; overflow:hidden;}
+.ma5-preloadbox img {width:1px !important; height:1px !important; position:absolute; top:0; left:0; image-rendering:optimizeSpeed; image-rendering:-moz-crisp-edges; image-rendering:-o-crisp-edges; image-rendering:-webkit-optimize-contrast; image-rendering:optimize-contrast; -ms-interpolation-mode:nearest-neighbor;}
