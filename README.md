@@ -1,6 +1,8 @@
 ### MA5-gallery ###
 Simple and ultralight jQuery gallery.
->v.1.2
+>v.1.3
+
+1.3 Reorganize code for future development and usability
 
 1.2 Add preload option
 
