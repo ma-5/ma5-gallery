@@ -2,11 +2,13 @@
 Simple and ultralight jQuery gallery.
 >v.1.3
 
+1.4 Add previous next control at full image
+
 1.3 Reorganize code for future development and usability
 
 1.2 Add preload option
 
-1.1 Add keys control
+1.1 Add keyboard control
 
 1.0 Initial
 

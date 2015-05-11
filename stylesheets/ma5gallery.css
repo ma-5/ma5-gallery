@@ -1,6 +1,6 @@
 /*
 *   MA5Gallery
-*   v 1.3
+*   v 1.4
 *   Copyright (c) 2015 Tomasz Kalinowski
 *   http://galeria.ma5.pl
 *   GitHub:https://github.com/ma-5/ma5-gallery
@@ -34,3 +34,5 @@
 .ma5-control .ma5-bg {display:block; position:relative; white-space:nowrap; overflow:auto; padding:0.7rem 0.8rem 0.7rem 0.8rem; background-color:rgba(0, 0, 0, 0.8);}
 .ma5-preloadbox {position:fixed; width:1px; height:1px; bottom:0; right:0; overflow:hidden;}
 .ma5-preloadbox img {width:1px !important; height:1px !important; position:absolute; top:0; left:0; image-rendering:optimizeSpeed; image-rendering:-moz-crisp-edges; image-rendering:-o-crisp-edges; image-rendering:-webkit-optimize-contrast; image-rendering:optimize-contrast; -ms-interpolation-mode:nearest-neighbor;}
+.ma5-prev {position:fixed; top:0; left:0; width:20%; height:100%; z-index:900;}
+.ma5-next {position:fixed; top:0; right:0; width:20%; height:100%; z-index:900;}
