@@ -1,6 +1,6 @@
 ### MA5-gallery ###
 Simple and ultralight jQuery gallery.
->v.1.3
+>v.1.4
 
 1.4 Add previous next control at full image
 
