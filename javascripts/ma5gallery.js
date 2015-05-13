@@ -16,7 +16,7 @@ function ma5showActive() {
     var ma5clone = $('.ma5-active img').clone().attr('src', $('.ma5-active img').attr('src').replace(/\-thumbnail./, '.')).addClass('ma5-clone');
     $('body').addClass('ma5-in').append('<div class="ma5-imgbox"></div>');
     $(ma5clone).appendTo($('.ma5-imgbox').last());
-}                    
+}
 function ma5hideActive() {
     $('.ma5-imgbox').on('touch click', function() {
         $('figure').removeClass('ma5-active');    
@@ -24,13 +24,7 @@ function ma5hideActive() {
         var content = $(".ma5-bg").contents();
         $('.ma5-tmp').addClass('ma5-out');
         $('.ma5-prev, .ma5-next').remove();
-        setTimeout(function() {
-            $('.ma5-tmp').remove();
-        }, 800);
-        setTimeout(function() {
-            $('.ma5-imgbox').remove();
-            $('body').removeClass('ma5-gallery-active')
-        }, 800);
+        setTimeout(function() { $('.ma5-tmp').remove(); $('.ma5-imgbox').remove(); $('body').removeClass('ma5-gallery-active')}, 800);
     });
 }
 function ma5goPrev() {
@@ -41,7 +35,7 @@ function ma5goPrev() {
     }
 }
 function ma5goNext() {
-    if($('.ma5-tmp .ma5-active').next().length) {               
+    if($('.ma5-tmp .ma5-active').next().length) {
         $('.ma5-tmp .ma5-active').removeClass('ma5-active').next().addClass('ma5-active');
         ma5showActive();
         ma5hideActive();
@@ -53,7 +47,6 @@ $.fn.ma5gallery = function(atributes) {
     };
     var thisSelector = '.ma5-tmp '+this.selector;
     $(this).on('touch click', function() {
-        
         if(!$('.ma5-imgbox').hasClass('ma5-out') && !$('body').hasClass('ma5-in') ) {
             if($(this).parent().parent().hasClass('ma5-gallery') || $(this).parent().parent().hasClass('ma5-bg')) {
                 // gallery mode
