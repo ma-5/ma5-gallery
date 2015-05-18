@@ -71,7 +71,7 @@ $.fn.ma5gallery = function(atributes) {
                     }
                 });
                 $(thisSelector).on('touch click', function() {
-                    if (!$(this).parent().hasClass('ma5-active')) {
+                    if(!$(this).parent().hasClass('ma5-active') && !$("body").hasClass('ma5-in') ) {
                         $('.ma5-tmp figure').removeClass('ma5-active');
                         $(this).parent().addClass('ma5-active');
                         ma5showActive();
