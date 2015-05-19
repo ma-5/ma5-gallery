@@ -1,6 +1,6 @@
 ### MA5-gallery ###
 Simple and ultralight jQuery gallery.
->v.1.5 Add description
+>v.1.5 Add figcaption
 
 1.4 Add previous next control at full image
 
@@ -56,12 +56,12 @@ GALLERY MODE
 </div>
 ```
 
-DESCRIPTION
+FIGCAPTION
 ```html
 <!-- html body -->
 <figure>
     <img src="name-thumbnail.jpg" alt="">
-    <figcaption>Description</figcaption>
+    <figcaption>Title</figcaption>
 </figure>
 ```
 
