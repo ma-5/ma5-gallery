@@ -74,7 +74,7 @@ If you want customize path to full image.
 ```html
 <!-- html body -->
 <figure>
-    <img src="name-thumbnail.jpg" alt="" data-ma5pathtofull="./path/to/full/image.jpg">
+    <img src="./path/to/thumbnail/image.jpg" alt="" data-ma5pathtofull="./path/to/full/image.jpg">
 </figure>
 ```
 
