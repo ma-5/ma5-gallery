@@ -1,6 +1,8 @@
 ### MA5-gallery ###
 Simple and ultralight jQuery gallery.
->v.1.5 Add figcaption
+>v.1.6 Add option for customize path to full image
+
+1.5 Add figcaption
 
 1.4 Add previous next control at full image
 
@@ -64,6 +66,18 @@ FIGCAPTION
     <figcaption>Title</figcaption>
 </figure>
 ```
+
+PATH TO FULL
+
+If you want customize path to full image.
+
+```html
+<!-- html body -->
+<figure>
+    <img src="name-thumbnail.jpg" alt="" data-ma5pathtofull="./path/to/full/image.jpg">
+</figure>
+```
+
 
 ### 3.Call the script
 
