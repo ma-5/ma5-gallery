@@ -8,7 +8,13 @@
 ;
 $.fn.ma5preload = function() {
     $('body').append('<div class="ma5-preloadbox"></div>');
-    this.each(function(){$(this).clone().attr('src', $(this).attr('src').replace(/\-thumbnail./, '.')).appendTo('.ma5-preloadbox');});  
+    this.each(function(){
+        if (typeof $(this).data('ma5pathtofull') !== "undefined") {
+            $(this).clone().attr('src', $(this).data('ma5pathtofull')).appendTo('.ma5-preloadbox');
+        } else {
+            $(this).clone().attr('src', $(this).attr('src').replace(/\-thumbnail./, '.')).appendTo('.ma5-preloadbox');
+        }
+    });  
 }
 function ma5showActive() {
     $('.ma5-imgbox').addClass('ma5-previous');
