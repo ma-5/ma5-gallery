@@ -1,6 +1,7 @@
 ### MA5-gallery ###
 Simple and ultralight jQuery gallery.
->v.1.6 Add option for customize path to full image
+>v.2.0.0 Add fullscren option and movie player features
+1.6 Add option for customize path to full image
 
 1.5 Add figcaption
 
@@ -19,11 +20,13 @@ Simple and ultralight jQuery gallery.
 * jQuery
 * Html5
 * CSS3
+* fullscreen
+* move player embed compatibile
 
 ### Example
 * [See example](http://galeria.ma5.pl/)
 
-IMAGES 
+IMAGES option 1:
 
 Thumbnails and full images should place in the same folder:
 
@@ -31,50 +34,77 @@ name-thumbnail.jpg
 
 name.jpg
 
+```html
+<!-- html body -->
+<figure class="gallery-item">
+    <img src="./path/to/thumbnail/image-thumbnail.jpg" alt="">
+</figure>
+```
+
+IMAGES option 2:
+
+If you want use path to full image.
+
+```html
+<!-- html body -->
+<figure class="gallery-item">
+    <img src="./path/to/thumbnail/image.jpg" alt="" data-ma5pathtofull="./path/to/full/image.jpg">
+</figure>
+```
+
+
 ### 1.Getting Started
 ```html
 <!-- html head -->
 <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui, user-scalable=no">
-<link href="./stylesheets/ma5gallery.css" media="screen, projection" rel="stylesheet" type="text/css">
-<script src="./javascripts/jquery-2.1.1.min.js"></script>
+<link href="./stylesheets/ma5gallery.css" rel="stylesheet" type="text/css">
+<script src="./javascripts/jquery.js"></script>
 <script src="./javascripts/ma5gallery.js"></script>
 ```
 
 ### 2. Set up HTML
 
-SINGLE MODE
+SINGLE MODE (for display only one image)
 ```html
 <!-- html body -->
-<figure><img src="name-thumbnail.jpg" alt=""></figure>
-<figure><img src="name-thumbnail.jpg" alt=""></figure>
+<figure class="gallery-item"><img src="name-thumbnail.jpg" alt=""></figure>
+<figure class="gallery-item"><img src="name-thumbnail.jpg" alt=""></figure>
 ```
 
-GALLERY MODE
+GALLERY MODE for display gallery with keys controll (space, arrows left right keys, escape)
 ```html
 <!-- html body -->
 <div class="ma5-gallery">
-    <figure><img src="name-thumbnail.jpg" alt=""></figure>
-    <figure><img src="name-thumbnail.jpg" alt=""></figure>
+    <figure class="gallery-item"><img src="name-thumbnail.jpg" alt=""></figure>
+    <figure class="gallery-item"><img src="name-thumbnail.jpg" alt=""></figure>
 </div>
 ```
 
 FIGCAPTION
 ```html
 <!-- html body -->
-<figure>
+<figure class="gallery-item">
     <img src="name-thumbnail.jpg" alt="">
     <figcaption>Title</figcaption>
 </figure>
 ```
 
-PATH TO FULL
 
-If you want customize path to full image.
+
+EMBED MEDIA
 
 ```html
 <!-- html body -->
-<figure>
-    <img src="./path/to/thumbnail/image.jpg" alt="" data-ma5pathtofull="./path/to/full/image.jpg">
+<figure class="gallery-item ma5-html">
+     <div class="ma5-html-content">
+        <div class="ma5-html-content-center">
+            <img class="ma5-html-thumbnail" src="https://img.youtube.com/vi/zCRUPWDIgYM/mqdefault.jpg" alt="">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zCRUPWDIgYM?showinfo=0&amp;rel=0" allowfullscreen></iframe>
+            </div>
+        </div>
+     </div>
+     <figcaption>Figcaption content <a href="#link">link</a></figcaption>
 </figure>
 ```
 
@@ -82,8 +112,9 @@ If you want customize path to full image.
 ### 3.Call the script
 
 ```html
-    $('figure img').ma5gallery({
-        preload:true
+    $('gallery-item').ma5gallery({
+        preload:true,
+        fullscreen:true
     });
 ```
 

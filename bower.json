@@ -1,0 +1,23 @@
+{
+  "name": "ma5-gallery",
+  "description": "v2.0.0",
+  "main": [
+    "./scss/_ma5gallery.scss",
+    "./css/ma5gallery.css", 
+    "./js/ma5gallery.js"
+  ],
+  "authors": [
+    "ma-5 <ma-5@users.noreply.github.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
