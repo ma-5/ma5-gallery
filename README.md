@@ -121,6 +121,7 @@ EMBED MEDIA
 
 ### 4.Options
 preload : true|false (Default false) Download all images to the browser.
+fullscreen : true|false (Default false) Turn on fullscreen mode
 
 License
 ------------
