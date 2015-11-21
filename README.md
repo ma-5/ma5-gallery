@@ -1,6 +1,7 @@
 ### MA5-gallery ###
 Simple and ultralight jQuery gallery.
 >v.2.0.0 Add fullscren option and movie player features
+
 1.6 Add option for customize path to full image
 
 1.5 Add figcaption
@@ -120,6 +121,8 @@ EMBED MEDIA
 
 ### 4.Options
 preload : true|false (Default false) Download all images to the browser.
+
+fullscreen : true|false (Default false) Turn on fullscreen mode.
 
 License
 ------------
