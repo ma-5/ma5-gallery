@@ -490,7 +490,9 @@ html {
   width: 100%;
   z-index: 3910;
   padding: 1.6rem 1.6rem 1.6rem 5rem;
-  overflow: hidden; }
+  overflow: hidden;
+  top: 0;
+  left: 0; }
   .ma5-figcaption .ma5-centerbox,
   .ma5-figcaption-old .ma5-centerbox {
     max-width: 120rem;
@@ -510,6 +512,9 @@ html {
       left: 1.9rem;
       top: 1.5rem;
       font-size: 2rem; }
+      .ma5-figcaption .ma5-centerbox .ma5-gallery-icon-info:before,
+      .ma5-figcaption-old .ma5-centerbox .ma5-gallery-icon-info:before {
+        color: inherit; }
       @media (max-width: 1199px) {
         .ma5-figcaption .ma5-centerbox .ma5-gallery-icon-info,
         .ma5-figcaption-old .ma5-centerbox .ma5-gallery-icon-info {

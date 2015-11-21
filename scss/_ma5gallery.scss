@@ -567,6 +567,8 @@ html {
 	z-index:$ma5-gallery-zindex + 910;
 	padding: 1.6rem 1.6rem 1.6rem 5rem;
     overflow:hidden;
+    top:0;
+    left:0;
 
     .ma5-centerbox {
     	max-width: 120rem;
@@ -586,6 +588,10 @@ html {
             left:1.9rem;
             top:1.5rem;
             font-size:2rem;
+            
+            &:before {
+                color:inherit;
+            }
 
             @media($ma5-mq-to-tablet) {
                 display:none;
