@@ -111,7 +111,13 @@ EMBED MEDIA
 
 
 ### 3.Call the script
-Make custom class fol gallery items. For example <figure class="gallery-item"> call the script:
+Make custom class for gallery items. For example 
+```html
+<figure class="gallery-item">
+    <img src="./path/to/thumbnail/image-thumbnail.jpg" alt="">
+</figure>
+```
+call the script:
 
 ```html
     $('gallery-item').ma5gallery({
