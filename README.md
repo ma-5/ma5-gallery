@@ -118,7 +118,7 @@ Make custom class for gallery items. For example
     <figcaption>Title</figcaption>
 </figure>
 ```
-call the script:
+and call the script:
 
 ```html
     $('gallery-item').ma5gallery({
