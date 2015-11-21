@@ -1,6 +1,7 @@
 ### MA5-gallery ###
 Simple and ultralight jQuery gallery.
 >v.2.0.0 Add fullscren option and movie player features
+
 1.6 Add option for customize path to full image
 
 1.5 Add figcaption
