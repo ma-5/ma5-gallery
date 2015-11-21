@@ -272,9 +272,11 @@ $.fn.ma5gallery = function(atributes) {
             window.fullScreenApi = fullScreenApi;
         })();
     }
+    var fs = false;
+    var changeHandler = false;
     if(atributes.fullscreen === true) {
-        var changeHandler = function(){
-            var fs = fullScreenApi.isFullScreen();
+        changeHandler = function(){
+            fs = fullScreenApi.isFullScreen();
             if (!fs) {
                 exitFullScreen(selector);
             } 

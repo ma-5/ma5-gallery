@@ -10,6 +10,7 @@
   font-style: normal;
   font-weight: normal;
   line-height: 1;
+  color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -383,6 +384,10 @@ html {
   position: fixed;
   cursor: pointer;
   overflow: hidden; }
+  @media (min-width: 1200px) {
+    .ma5-prev,
+    .ma5-next {
+      font-size: 2rem; } }
   .ma5-prev:before,
   .ma5-next:before {
     content: "";
@@ -637,7 +642,7 @@ html {
     max-width: 60px;
     max-height: 60px;
     border: 2px solid rgba(255, 255, 255, 0);
-    background-color: rgba(255, 255, 255, 0.8); }
+    background-color: rgba(128, 128, 128, 0.2); }
     @media (min-width: 1200px) {
       .ma5-control .ma5-lightbox {
         border: 0.4rem solid rgba(255, 255, 255, 0); } }
@@ -857,6 +862,7 @@ html {
     bottom: -100%;
     left: -100%;
     width: auto;
+    max-width: none;
     min-height: 100%;
     min-width: 105%;
     height: 105%; }

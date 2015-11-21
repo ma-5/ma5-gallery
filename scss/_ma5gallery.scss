@@ -7,7 +7,8 @@ $ma5-gallery-color4:#000000; // backdrop
 $ma5-gallery-color5:#fff; // color for html content background
 $ma5-gallery-color6:rgba(0,0,0,0.5); // color for html content background
 $ma5-gallery-color7:rgba(0,0,0,0.8); // phone figaption background
-$ma5-gallery-color8:rgba(255,255,255,0.8); //border thumbnail
+$ma5-gallery-color8:rgba(128,128,128,0.2); //border thumbnail 
+$ma5-color-icon-color:#fff;
 $ma5-color-icon-circle:#555;
 $ma5-color-lightbox-border:#aaa;
 $ma5-gallery-zindex:3000;
@@ -32,6 +33,7 @@ $ma5-mq-desktop:"min-width: 1200px";                        // Desktop only
     font-style: normal;
     font-weight: normal;
     line-height: 1;
+    color:$ma5-color-icon-color;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -498,6 +500,10 @@ html {
     position: fixed;
     cursor:pointer;
     overflow:hidden;
+
+    @media($ma5-mq-desktop) {
+        font-size:2rem;
+    }
     
     &:before {
         content:"";
@@ -973,6 +979,7 @@ html {
         bottom: -100%;
         left: -100%;
         width: auto;
+        max-width:none;
         min-height: 100%;
         min-width: 105%;
         height: 105%;
