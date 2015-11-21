@@ -352,7 +352,7 @@ html {
     animation-fill-mode: both;
 	-webkit-animation-name: animation-fade-in;
 	animation-name: animation-fade-in;
-    pointer-events: none;
+    // pointer-events: none;
     
     .ma5-lightbox {
     	width: 5rem;
@@ -440,7 +440,7 @@ html {
     	white-space: nowrap;
     	overflow: auto;
     	padding: 0.7rem 0.8rem 0.7rem 0.8rem;
-        pointer-events: none;
+        // pointer-events: none;
     }
 }
 
@@ -549,6 +549,7 @@ html {
     .ma5-gallery-icon {
         @include makeNavItem();
     }
+
 }
 
 
@@ -680,7 +681,7 @@ html {
 .ma5-hide {
     cursor:default;
 
-    opacity:0.1;
+    opacity:0.15;
     
     * {
         cursor:default !important;
@@ -861,11 +862,12 @@ html {
 }
 .ma5-close {
     width:4.5rem;
-    top:1rem;
-    right:0.1rem;
+    top:1.4rem;
+    right:0.5rem;
     height:3.2rem;
     padding:0;
     display:block;
+    text-align:center;
     
     .ma5-gallery-icon {
         &:before {
@@ -883,6 +885,7 @@ html {
     -webkit-transition: none;
     transition: none;
     overflow:hidden;
+    text-align:center;
     
     .ma5-gallery-icon {
         @include makeNavItem();
@@ -918,17 +921,21 @@ html {
     }
 }
 .ma5-toggle-figcaption {
-    left:0;
+    left:0.6rem;
     top:1rem;
     padding-left:1rem;
     padding-right:1.5rem;
     width:6rem;
     z-index:$ma5-gallery-zindex + 1980;
+    //border-left:1px solid red;
 
     .ma5-gallery-icon {
         &:before {
             font-size:1.6rem;
         }
+    }
+    .ma5-gallery-icon-info {
+        font-size:20px;
     }
 }
 .ma5-loaded {
