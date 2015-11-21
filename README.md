@@ -114,7 +114,8 @@ EMBED MEDIA
 Make custom class for gallery items. For example 
 ```html
 <figure class="gallery-item">
-    <img src="./path/to/thumbnail/image-thumbnail.jpg" alt="">
+    <img src="./path/to/thumbnail/image-thumbnail.jpg"  data-ma5pathtofull="./path/to/full/image.jpg" alt="">
+    <figcaption>Title</figcaption>
 </figure>
 ```
 call the script:
