@@ -24,9 +24,6 @@ Simple and ultralight jQuery gallery.
 * fullscreen
 * move player embed compatibile
 
-### Example
-* [See example](http://galeria.ma5.pl/)
-
 IMAGES option 1:
 
 Thumbnails and full images should place in the same folder:
